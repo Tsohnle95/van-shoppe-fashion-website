@@ -9,7 +9,7 @@ A responsive, multi-page fashion retail website developed as part of my NAIT Web
 
 ## 🚀 Live Demo
 
-[View on GitHub Pages](https://tsohnle95.github.io/responsive-fashion-website/)
+[View on GitHub Pages](https://tsohnle95.github.io/van-shoppe-fashion-website)
 
 ## 🧵 Project Overview
 
