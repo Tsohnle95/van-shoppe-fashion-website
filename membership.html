@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tsohnle95">
+
+    <title>Van - Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/the-new-css-reset-1.11.3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<!--back to index-->
+<body class="membership">
+    <header class="inner-container text-center">
+        <nav class="fs-14">
+            <a href="index.html" class="mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <title>Click to return to home page</title>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+                Back
+            </a>
+        </nav>
+
+        <!--one membership all four brands-->
+        <h1 class="mb-1point5">ONE MEMBERSHIP. ALL FOUR BRANDS.</h1>
+        <ul class="mb-2point5">
+            <li><a class="inter-bold fs-24" href="#">NEW OCEAN</a></li>
+            <li><a class="inter-extra-light fs-24 slanted-text" href="#"><i>ORANGE STATE</i></a></li>
+            <li><a href="#" class="fs-24">PLAYER</a></li>
+            <li class="inria-serif-bold fs-24"> VAN</li>
+        </ul>
+    </header>
+
+    <!--form-->
+    <main class="inner-container">
+        <form action="process_form.php" method="post">
+            <fieldset>
+                <legend class="inria-sans fs-32 mb-2">Sign up to become a Rewards Member. </legend>
+                <p class="mb-3 gray3">You're just one step away from free shipping, points on every purchase, and so
+                    much more!</p>
+
+                <!--Your name field-->
+                <div>
+                    <label for="name" class="inria-sans-bold fs-20 mb-point5">Your Name</label>
+                    <input class="gray2 mb-point5 fs-18" type="text" id="name" name="name" placeholder="Rewards Member"
+                        aria-describedby="name-input" required>
+                    <p class="gray2 mb-1point5 fs-14" id="name-input">Please enter your first and last name.</p>
+                </div>
+
+                <!--Email input field-->
+                <div>
+                    <label for="email" class="inria-sans-bold fs-20 mb-point5">Email Address</label>
+                    <input class="gray2 fs-18 mb-point5" type="email" id="email" name="email"
+                        placeholder="Hello@example.com" aria-describedby="email-input" required>
+                    <p class="gray2 mb-1point5 fs-14" id="email-input">Your email address is where we’ll send important
+                        account
+                        information and order updates.</p>
+                </div>
+
+                <!--Password input field-->
+                <div>
+                    <label for="password" class="inria-sans-bold fs-20 mb-point5">Choose a Password</label>
+                    <input class="gray2 fs-18 mb-point5" type="text" id="password" name="password"
+                        aria-describedby="password-input"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d@$!%*?&])[A-Za-z\d@$!%*?&]{8,24}$" placeholder=""
+                        required>
+                    <div class="gray2 fs-14" id="password-input">
+                        <p class="mb-point5">Your password must have:</p>
+                        <ul class="mb-2">
+                            <li class="mb-point5">an uppercase letter</li>
+                            <li class="mb-point5">a lowercase letter</li>
+                            <li class="mb-point5">a number or special character</li>
+                            <li class="mb-point5">8-24 characters in total</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Exclusive offers-->
+                <h2 class="inria-sans-bold fs-20 mb-1">Exclusive Offers</h2>
+                <!--checkbox-->
+                <div class="checkbox mb-1">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">Yes! I would like to receive marketing emails with exclusive offers.</label>
+                </div>
+                <div class="mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <title>Important!</title>
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                    </svg>
+
+                    <p class="gray2 fs-14">Check the box above to sign up for marketing emails and get 250 BONUS POINTS.
+                        You can unsubscribe at any time.</p>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit" name="submit" value="CREATE ACCOUNT"
+                class="mb-2 sign-up-btn light-blue white text-center inria-sans-bold fs-20 btn-hover">
+
+            <p class="gray2 fs-14">By creating an account, you’re joining the Big Brand Rewards Program and agree to the
+                Terms and Conditions and Privacy Policy of the program. You also consent to receive account updates and
+                transactional emails related to your membership.</p>
+        </form>
+
+        <!--FAQ-->
+        <section class="faq">
+            <div class="accordion">
+                <h2 class="inria-sans fs-32 mb-point5">Frequently Asked Questions</h2>
+                <!--  Item Number 1  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">What is the Rewards Member program?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p>The Rewards Member program is our loyalty program, designed to reward you with exclusive
+                            benefits, discounts, and perks.</p>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 2  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">How do i become a Rewards Member?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p>You can become a member of the Rewards program by signing up on our website or mobile app.
+                            Simply create an account and opt-in to join the program during the registration process.</p>
+
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 3  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">What are the benefits of being a Rewards
+                                Member?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p class="mb-1">As a Rewards Member, you can enjoy a range of benefits, including:</p>
+                        <ul>
+                            <li class="mb-1"> Earn points for purchases: Accumulate points for every purchase made,
+                                which can be redeemed for rewards.</li>
+                            <li class="mb-1"> Exclusive discounts: Access member-only discounts and promotions on
+                                selected products or services.</li>
+                            <li class="mb-1"> Birthday rewards: Receive special offers or discounts during your birthday
+                                month.</li>
+                            <li class="mb-1"> Early access to sales: Get early access to sales events and new product
+                                launches.</li>
+                            <li class="mb-1">Free shipping: Enjoy complimentary shipping on eligible orders.</li>
+                        </ul>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 4  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">How do I earn and redeem points?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p class="mb-point5">
+                            You can earn points in the Rewards program by making qualifying purchases, participating in
+                            promotional activities, referring friends, or engaging with our brand through social media
+                            or surveys.
+                        </p>
+                        <p>
+                            To redeem your points for rewards, log in to your Rewards account and navigate to the
+                            "Redeem Rewards" section. Choose from the available reward options and follow the prompts to
+                            complete the redemption process.</p>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 5  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">Do my points expire?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p>Points in the Rewards program may have an expiration date, depending on the program's terms
+                            and conditions. Please refer to the program guidelines or contact customer support for
+                            information about point expiration policies.</p>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 6  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">Is there a membership fee?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p>No, membership in the Rewards program is completely free. There are no annual fees or hidden
+                            charges associated with joining or maintaining your membership.</p>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+
+                <!--  Item Number 7  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header toggle-btn">
+                        <button type="button">
+                            <span class="light-bluebg inria-sans-bold fs-20">Where can I find more information about the
+                                Rewards program?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <title>Toggle Item Visibility</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content collapsed">
+                        <p>For more information about the Rewards program, including detailed terms and conditions,
+                            point earning and redemption rules, and FAQs, visit our website or contact our customer
+                            support team for assistance.</p>
+                    </div> <!-- end of .accordion-content -->
+                </div> <!-- end of .accordion-item -->
+            </div> <!-- end of .accordion component -->
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="text-center">
+        <div class="inner-container">
+            <!-- 3 footer cards-->
+            <div>
+                <a href="#">
+                    <h4 class="inria-sans-bold fs-20 black mb-1">CUSTOMER SUPPORT</h4>
+                </a>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Buy Online.</a></li>
+                    <li><a href="#">Pick Up in-Store</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li class="mb-3"><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#">
+                    <h4 class="inria-sans-bold fs-20 mb-1">ABOUT US</h4>
+                </a>
+                <ul>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Equality and Belonging</a></li>
+                    <li class="mb-3"><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#">
+                    <h4 class="inria-sans-bold fs-20 mb-1">VAN GOOD REWARDS</h4>
+                </a>
+                <ul>
+                    <li><a href="#">Join VAN</a></li>
+                    <li><a href="#">Good Rewards</a></li>
+                    <li><a href="#">My Rewards & Benefits</a></li>
+                    <li class="mb-4"><a href="#">Learn More</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--bottom footer bar-->
+        <div class="footer-bar blackbg white">
+            <ul class="fs-12 flex-container">
+                <li>© 2024 VAN, INC.|</li>
+                <li><a href="#">PRIVACY POLICY |</a></li>
+                <li><a href="#">YOUR PRIVACY CHOICES |</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">| SUSTAINABILITY</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

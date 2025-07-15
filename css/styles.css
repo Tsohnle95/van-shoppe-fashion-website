@@ -1,0 +1,670 @@
+html {
+    /* global settings */
+    font-size: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+/******************** Utility Classes ********************/
+.inner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+.inria-sans-bold {
+    /* fonts */
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold;
+}
+
+.inria-sans {
+    font-family: "Inria Sans", sans-serif;
+}
+
+.inria-serif-bold {
+    font-family: "Inria Serif", serif;
+    font-weight: bold;
+}
+
+.inter-bold {
+    font-weight: bold;
+}
+
+.inter-extra-light {
+    font-weight: 200;
+}
+
+.fs-12 {
+    /* font sizes */
+    font-size: .75rem;
+}
+
+.fs-14 {
+    font-size: .875rem;
+}
+
+.fs-18 {
+    font-size: 1.125rem;
+}
+
+.fs-20 {
+    font-size: 1.25rem;
+}
+
+.fs-24 {
+    font-size: 1.5rem
+}
+
+.fs-26 {
+    font-size: 1.625rem;
+}
+
+.fs-32 {
+    font-size: 2rem;
+}
+
+.fs-48 {
+    font-size: 3rem;
+}
+
+.fs-128 {
+    font-size: 8rem;
+}
+
+.fs-200 {
+    font-size: 12.5rem;
+}
+
+.white {
+    /* colours */
+    color: #ffffff;
+}
+
+.blackbg {
+    background-color: #000000;
+}
+
+.light-black {
+    background-color: #333333;
+}
+
+.gray {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.gray2 {
+    color: #666666;
+}
+
+.gray3 {
+    color: #333333;
+}
+
+.blue {
+    color: #007AFF;
+}
+
+.light-blue {
+    background-color: #6178A6;
+}
+
+.light-bluebg {
+    color: #6178A6;
+}
+
+.mb-point5 {
+    /* margins */
+    margin-bottom: .5rem;
+}
+
+.mb-point75 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-1point5 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-2point5 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+/******************** Header ********************/
+.index header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.slanted-text {
+    display: inline-block;
+    transform: skew(-10deg);
+}
+
+nav {
+    /* nav */
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+nav>div>.inner-container {
+    display: flex;
+    gap: 1.45rem;
+    padding: 2.25rem;
+    justify-content: center;
+    letter-spacing: .0625rem;
+    white-space: nowrap;
+}
+
+nav .flex-container {
+    flex-flow: row;
+    align-items: center;
+}
+
+nav div ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav svg {
+    width: 6rem;
+}
+
+header nav div:first-of-type {
+    background-color: #000000;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+header nav div:nth-of-type(1) ul li a:hover,
+header nav div:nth-of-type(1) ul li a:focus,
+.footer-bar ul li a:hover,
+.footer-bar ul li a:focus {
+    text-decoration: underline 1px solid white;
+}
+
+header nav .flex-container ul.hidden li a:hover,
+header nav .flex-container ul.hidden li a:focus,
+.modal-body p a:hover,
+.modal-body p a:focus {
+    text-decoration: underline;
+}
+/******************** Hero ********************/
+.hero div div {
+    margin-top: -0.4rem;
+}
+
+.hero div h2 {
+    line-height: .9;
+}
+/******************** Shop by Division ********************/
+.shop>div>.card-container {
+    border: .0625rem solid #D8D8D8;
+}
+
+.shop>div>div>div a svg {
+    width: 1.25rem;
+}
+
+.shop>div>div>div a {
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+
+.block-cards div {
+    padding: 1rem;
+}
+
+.card {
+    padding: 0 1.5rem;
+}
+
+.test:hover {
+    text-decoration: underline;
+}
+
+.shop div .card a:hover,
+.shop div .card a:focus,
+footer .inner-container>div a:hover,
+footer .inner-container>div a:focus {
+    text-decoration: underline;
+}
+
+.block-cards div:hover,
+.block-cards div:focus {
+    background-color: #003764;
+}
+/******************** More new arrivals ********************/
+.new-arrivals .flex-container {
+    flex-direction: row;
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 6rem;
+    gap: 2rem;
+}
+
+.scroll-wrapper div {
+    flex: 0 0 14rem;
+}
+/******************** Footer ********************/
+.footer-bar ul {
+    flex-flow: row wrap;
+    gap: .25rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+/******************** Modal ********************/
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    min-height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 11;
+}
+
+.modal {
+    max-width: 540px;
+    width: calc(100% - 2rem);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-bg {
+    background: url('../img/funny-beach.webp') center / cover no-repeat;
+    border-radius: .625rem .625rem 0 0;
+    height: 16rem;
+}
+
+.modal-body {
+    padding: 2.5rem 2rem;
+    background-color: white;
+    border-radius: 0 0 .625rem .625rem;
+}
+
+.modal-body button.close {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: flex-end;
+    margin-left: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.close-content {
+    display: inline-flex;
+    gap: .5rem;
+    border-bottom: .0938rem solid transparent;
+}
+
+.close svg {
+    width: 1.5rem;
+}
+
+.modal-body a.sign-up-btn {
+    display: block;
+    border-radius: .5rem;
+    padding: .75rem 0;
+}
+
+.btn-hover:hover,
+.btn-hover:focus {
+    background-color: #003764;
+    transition: background-color .2s ease;
+}
+
+.close-content:hover,
+.close-content:focus,
+.membership header nav a:hover,
+.membership header nav a:focus {
+    border-bottom: 1px solid black;
+    border-bottom-color: black;
+    transition: border-bottom 0.2s ease;
+}
+/********************************************* Page 2 Membership Page *********************************************/
+/******************** Header ********************/
+.membership header nav svg {
+    width: 1.3rem;
+}
+
+.membership header nav a {
+    display: flex;
+    gap: .75rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+}
+
+.membership header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membership header ul li {
+    flex: 0 0 12rem;
+}
+
+.membership header ul li:nth-child(3) {
+    text-align: right;
+}
+
+.membership header ul li:nth-child(4) {
+    padding-right: 2.75rem;
+}
+/******************** Form ********************/
+.membership header.inner-container {
+    max-width: 650px;
+    padding-top: 6rem;
+}
+
+fieldset input:invalid:not(:focus):not(:placeholder-shown) {
+    background: url('../img/svg/exclamation.svg') right 0.5rem center no-repeat;
+    border-color: #B22222;
+}
+
+fieldset input:valid {
+    background: url('../img/svg/check.svg') right 0.5rem center no-repeat;
+}
+
+main.inner-container {
+    max-width: 650px;
+}
+
+.membership form {
+    border: .0625rem solid #D8D8D8;
+    padding: 2rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: .0625rem solid #666666;
+    width: 100%;
+    padding: .26rem .5rem;
+}
+
+.checkbox {
+    display: flex;
+    gap: .75rem;
+}
+
+form fieldset ul {
+    list-style-type: disc;
+    padding-left: 1.4rem;
+}
+
+input[type="checkbox"] {
+    height: 1rem;
+    margin-bottom: 1.7rem;
+    flex: 0 0 1.5rem;
+}
+
+.membership form div svg {
+    flex: 0 0 1.25rem;
+    margin: .2rem 0 0 .3rem;
+}
+
+.membership form div:has(svg) {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.membership main input[type="submit"] {
+    border-radius: .625rem;
+    height: 3rem;
+}
+
+.membership header ul li a:hover,
+.membership header ul li a:focus {
+text-decoration: underline;
+}
+
+.membership header ul li:nth-of-type(4):hover,
+.membership header ul li:nth-of-type(4):focus {
+text-decoration: underline;
+}
+/******************** FAQ / ACCORDION ********************/
+.accordion {
+    margin: 3rem 0;
+    border: .0625rem solid rgba(216, 216, 216, 1);
+    padding: 3rem;
+}
+
+.accordion-item {
+    border-bottom: .0625rem solid rgba(216, 216, 216, 1);
+}
+
+.accordion-item button {
+    align-items: flex-start;
+    border-radius: .25rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 1.5rem 0;
+    width: 100%;
+}
+
+.accordion .accordion-item button svg {
+    transition: transform .3s ease;
+    flex: 0 0 1.5rem;
+    margin-top: .3rem;
+}
+
+.accordion-content {
+    transition: opacity 200ms linear, max-height 200ms linear;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding: 0 1rem;
+}
+
+.accordion-item:nth-of-type(7) {
+    border-bottom: none;
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.expanded {
+    max-height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+}
+
+.toggle-btn:has(+ .expanded) svg {
+    transform: rotate(45deg);
+}
+
+@media (min-width: 655px) { 
+    .membership header ul li:nth-of-type(3) { /* just dealing with some nonsense that was bugging me where a tablet view would normally be on the form page brand navigation elements*/
+       text-align: left;
+       margin-left: 1.5rem;
+        flex: 0 0 7rem;
+    }
+} 
+/******************** Media Queries min-width: 980px; ********************/
+@media (min-width: 980px) {
+    .modal {
+        /* modal */
+        display: flex;
+        max-width: 1200px;
+        height: 32rem;
+        padding: 0 5rem;
+    }
+
+    .modal-bg {
+        flex: 0 0 40%;
+        border-radius: .5rem 0 0 .5rem;
+        height: 32rem;
+    }
+
+    .modal-body {
+        flex: 0 0 60%;
+        border-radius: 0 .5rem .5rem 0rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    /*nav*/
+    nav>div>.inner-container {
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .hidden {
+        display: flex;
+    }
+    /* hero */
+    .hero {
+        margin-bottom: -12.5rem;
+    }
+
+    .hero>div {
+        height: 12rem;
+        position: relative;
+        bottom: 19.5rem;
+    }
+
+    .hero>div>div {
+        display: flex;
+        align-items: flex-end;
+        padding: 0 2rem;
+        justify-content: space-between;
+        margin: 0 1.5rem;
+        max-width: 1440px;
+    }
+    /*shop by division*/
+    .shop .flex-container {
+        flex-flow: row wrap;
+        margin: 0 4rem;
+        padding: 0 2.5rem;
+    }
+
+    .card-container {
+        width: calc((100% / 3) - (12rem / 4));
+    }
+
+    .shop .flex-container .card-container img {
+        width: 100%;
+    }
+
+    .shop {
+        margin-bottom: 0;
+    }
+
+    .shop .flex-container .block-cards {
+        display: flex;
+        gap: 2rem;
+        margin: 2.5rem -6rem;
+        width: calc(100% + 14rem);
+        justify-content: space-between;
+    }
+
+    .shop .flex-container .block-cards a {
+        flex: 1 1 20rem;
+    }
+    /* new arrivals scroll component */
+    .new-arrivals {
+        padding: 0 8rem;
+    }
+
+    .new-arrivals h3 {
+        margin: 0 -5.75rem;
+        margin-bottom: 4rem;
+    }
+    /* footer */
+    footer .inner-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8rem;
+    }
+
+    .membership header ul li:nth-of-type(3) {
+        text-align: center;
+        margin-left: 0;
+         flex: 0 0 6rem;
+     }
+
+    .membership header ul li:nth-child(4) {
+        padding-right: 0;
+    }
+
+    .membership header ul li {
+        flex: 0 0 0rem;
+        white-space: nowrap;
+    }
+
+    .membership header ul {
+        gap: 2rem;
+    }
+}
+@media (min-width: 1440px) {
+    .hero>div>div {
+        margin: 0 auto;
+    }
+}
+
+
+
