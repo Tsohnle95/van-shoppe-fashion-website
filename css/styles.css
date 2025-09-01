@@ -157,11 +157,11 @@ body {
     margin-bottom: 4rem;
 }
 /******************** Header ********************/
-.index header {
+/* .index header {
     position: sticky;
     top: 0;
     z-index: 10;
-}
+} */
 
 .slanted-text {
     display: inline-block;
